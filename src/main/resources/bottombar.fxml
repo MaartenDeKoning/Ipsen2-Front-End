@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx">
+    <AnchorPane prefWidth="1600" prefHeight="100"
+                style="-fx-background-color: #fff">
+        <ImageView layoutX="300" layoutY="0">
+            <Image requestedWidth="200" preserveRatio="true" url="images/leiden.png"/>
+        </ImageView>
+        <ImageView layoutX="700" layoutY="0">
+            <Image requestedWidth="200" preserveRatio="true" url="images/uni-leiden.png"/>
+        </ImageView>
+        <ImageView layoutX="1100" layoutY="0">
+            <Image requestedWidth="200" preserveRatio="true" url="images/hs-leiden.png"/>
+        </ImageView>
+    </AnchorPane>
+</AnchorPane>

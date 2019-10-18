@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="MainVBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditController">
+   <children>
+      <Label style="-fx-border-color: #aaa; -fx-border-width: 0 0 1 0;" text="Wijzig hier uw werkstuk">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="25.0" />
+         </VBox.margin>
+      </Label>
+      <Label text="Titel van het werkstuk" />
+      <TextField id="TitleTextField" fx:id="titleTextField" alignment="CENTER" promptText="Titel van het werkstuk">
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+         <children>
+            <ComboBox id="TaalComboBox" fx:id="taal" prefWidth="150.0" promptText="Taal" />
+            <ComboBox id="StudierichtingComboBox" fx:id="studierichting" prefWidth="150.0" promptText="Studierichting" />
+            <ComboBox id="VakComboBox" fx:id="vak" prefWidth="150.0" promptText="Vak" />
+         </children>
+      </HBox>
+      <Label text="Tags van het werkstuk (optioneel)" />
+      <TextField id="TagsTectField" fx:id="tagsList" alignment="TOP_LEFT" minHeight="100.0" promptText="Voer hier alle tags in">
+         <VBox.margin>
+            <Insets bottom="25.0" left="50.0" right="50.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Kies een categorie" />
+      <RadioButton fx:id="radioButtonOne" mnemonicParsing="false" text="Voldoende (5.5 - 9.0)">
+         <toggleGroup>
+            <ToggleGroup fx:id="radioToggle" />
+         </toggleGroup></RadioButton>
+      <RadioButton mnemonicParsing="false" text="Excelentie (9+)" toggleGroup="$radioToggle">
+         <VBox.margin>
+            <Insets bottom="25.0" />
+         </VBox.margin>
+      </RadioButton>
+      <Label text="Upload nieuw bestand  (optioneel)" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+         <children>
+            <Button id="UploadFileButton" mnemonicParsing="false" onAction="#uploadFileButtonClick" style="-fx-border-color: #aaa;" text="Bestand uploaden" />
+            <ListView fx:id="PdfListView" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" prefWidth="350.0" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </HBox>
+      <Button id="FinishButton" mnemonicParsing="false" onAction="#finishButtonClick" text="Klik hier om af te ronden" />
+      <Label id="ErrorMessage" fx:id="errorMessage" style="-fx-text-fill: #ff0000;" translateY="20.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="200.0" translateY="40.0">
+         <children>
+            <Button id="BackButton" mnemonicParsing="false" onAction="#backButtonCLick" text="Terug" />
+            <Button id="DeleteFileButton" mnemonicParsing="false" onAction="#deleteFileButtonClick" style="-fx-background-color: #ff0000; -fx-text-fill: #fff;" text="Verwijder bestand" />
+         </children>
+         <padding>
+            <Insets bottom="25.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

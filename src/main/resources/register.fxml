@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.RegisterController"
+            prefHeight="450.0" prefWidth="400.0">
+    <TextField prefWidth="300" prefHeight="50" layoutX="50" promptText="Gebruikersnaam"
+               style="-fx-background-color: #eee"/>
+    <TextField prefWidth="300" prefHeight="50" layoutX="50" layoutY="100" promptText="E-mail"
+               style="-fx-background-color: #eee;"/>
+    <PasswordField prefWidth="300" prefHeight="50" layoutX="50" layoutY="200" promptText="Wachtwoord"
+                   style="-fx-background-color: #eee;"/>
+    <ComboBox prefHeight="50" prefWidth="300" layoutX="50" layoutY="300" promptText="Student of docent"
+              style="-fx-background-color: #eee;">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="Student"/>
+                <String fx:value="Docent"/>
+            </FXCollections>
+        </items>
+    </ComboBox>
+    <Text layoutX="75" layoutY="390" style="-fx-stroke: red;"></Text>
+    <Button prefWidth="250" prefHeight="50" layoutX="75" layoutY="400" style="-fx-background-color: #eee;"
+            stylesheets="css/button.css">
+        Registreren
+    </Button>
+
+</AnchorPane>

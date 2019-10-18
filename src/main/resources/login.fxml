@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.LoginController"
+            prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #ddd;">
+    <TextField prefWidth="300" prefHeight="50" layoutX="50" layoutY="75" promptText="Gebruikersnaam"
+               style="-fx-background-color: #eee"/>
+    <PasswordField prefWidth="300" prefHeight="50" layoutX="50" layoutY="175" promptText="Wachtwoord"
+                   style="-fx-background-color: #eee;"/>
+    <Text layoutX="75" layoutY="265" style="-fx-stroke: red;"></Text>
+    <Button styleClass=".button" prefWidth="250" prefHeight="50" layoutX="75" layoutY="275"
+            style="-fx-background-color: #eee;" stylesheets="css/button.css">
+        Aanmelden
+    </Button>
+
+</AnchorPane>

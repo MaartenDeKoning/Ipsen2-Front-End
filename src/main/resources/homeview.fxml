@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.HomeController">
+    <AnchorPane prefHeight="1000" prefWidth="1600" style="-fx-background-color: #eee">
+        <AnchorPane fx:id="topbar" prefWidth="1600" prefHeight="50"
+                    style="-fx-background-color: #fff;">
+            <TextField promptText="Zoeken" prefWidth="400" prefHeight="40" layoutX="5" layoutY="5"
+                       style="-fx-background-color: #eee;"/>
+            <Button layoutX="365" layoutY="5" prefHeight="39" prefWidth="39" onAction="#searchButton"
+                    style="-fx-graphic: url('images/searchicon.png'); -fx-background-color: #eee;"/>
+            <ComboBox layoutX="410" layoutY="5" prefHeight="40" prefWidth="200" promptText="School"
+                      style="-fx-background-color: #eee;"/>
+            <ComboBox layoutX="615" layoutY="5" prefHeight="40" prefWidth="200" promptText="Studierichting"
+                      style="-fx-background-color: #eee;"/>
+            <ComboBox layoutX="820" layoutY="5" prefHeight="40" prefWidth="200" promptText="Vak"
+                      style="-fx-background-color: #eee;"/>
+            <ComboBox layoutX="1025" layoutY="5" prefHeight="40" prefWidth="200" promptText="Taal"
+                      style="-fx-background-color: #eee;"/>
+            <Hyperlink fx:id="homeLoginButton" onAction="#loginLink" layoutX="1360" layoutY="5"
+                       style="-fx-font: 20px Roboto;">Aanmelden
+            </Hyperlink>
+            <Hyperlink fx:id="homeRegisterButton" onAction="#registerLink" layoutX="1480" layoutY="5"
+                       style="-fx-font: 20px Roboto">Registreren
+            </Hyperlink>
+        </AnchorPane>
+        <AnchorPane fx:id="SearchOverlay" prefWidth="1000" prefHeight="750" layoutX="300" layoutY="125" visible="false"
+                    disable="true"
+                    style="-fx-background-color: #ddd; -fx-effect: dropshadow(three-pass-box, derive(#ccc, -20%), 10, 0, 4, 4);">
+            <Button fx:id="SearchBack" onAction="#searchBackButton" prefWidth="50" prefHeight="50" layoutX="945"
+                    layoutY="5" style="-fx-graphic: url('images/exit.png'); -fx-background-color: #ddd;"/>
+        </AnchorPane>
+        <AnchorPane fx:id="LoginOverlay" prefWidth="400" prefHeight="600" layoutX="600" layoutY="200" visible="false"
+                    disable="true"
+                    style="-fx-background-color: #ddd; -fx-effect: dropshadow(three-pass-box, derive(#ccc, -20%), 10, 0, 4, 4);">
+            <Button fx:id="LoginBack" onAction="#loginBackButton" prefWidth="50" prefHeight="50" layoutX="345"
+                    layoutY="5" style="-fx-graphic: url('images/exit.png'); -fx-background-color: #ddd;"/>
+            <fx:include layoutX="0" layoutY="100" source="login.fxml"/>
+        </AnchorPane>
+        <AnchorPane fx:id="RegisterOverlay" prefWidth="400" prefHeight="600" layoutX="600" layoutY="200" visible="false"
+                    disable="true"
+                    style="-fx-background-color: #ddd; -fx-effect: dropshadow(three-pass-box, derive(#ccc, -20%), 10, 0, 4, 4);">
+            <AnchorPane prefWidth="400" prefHeight="600" layoutX="0" layoutY="0" style="-fx-background-color: #ddd;">
+                <Button fx:id="RegisterBack" onAction="#registerBackButton" prefWidth="50" prefHeight="50" layoutX="345"
+                        layoutY="5" style="-fx-graphic: url('images/exit.png'); -fx-background-color: #ddd;"/>
+                <fx:include layoutX="0" layoutY="75" source="register.fxml"/>
+            </AnchorPane>
+        </AnchorPane>
+        <AnchorPane fx:id="bottombar" layoutX="0" layoutY="900">
+            <fx:include source="bottombar.fxml"/>
+        </AnchorPane>
+    </AnchorPane>
+</AnchorPane>

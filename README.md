@@ -19,11 +19,11 @@
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the documents »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/Minnebro/Ipsen2-Front-End">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/Minnebro/Ipsen2-Front-End/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/Minnebro/Ipsen2-Front-End/issues">Request Feature</a>
   </p>
 </p>
 
@@ -53,7 +53,7 @@ These are the requirements:
 * We MUST use JavaFX (exam requirement)
 * We also need to write everything in Java (exam requirement)
 
-We are free to use any kind of library and styling option (Css, FXML, code the style).
+We are free to use any kind of library and styling option (Css, FXML, etc).
 
 We also have a [back-end](https://github.com/Minnebro/Ipsen2-Back-End) for this project. This repository is mainly front-end.
 
@@ -87,7 +87,7 @@ Jesse Minneboo - info@minnict.nl
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [JavaFX documentation](https://openjfx.io/openjfx-docs/)
-* [Website client](https://plnt.nl/)
+* [Client's website](https://plnt.nl/)
 
 
 

@@ -81,6 +81,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Jesse Minneboo - info@minnict.nl
+Maarten de Koning - s1114224@student.hsleiden.nl
 
 
 
